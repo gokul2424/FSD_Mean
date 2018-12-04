@@ -1,0 +1,31 @@
+.form-control
+{
+	background-color:grey;
+	color:#b3b3b3;
+	border-color:grey;
+}
+h4
+{
+	text-align:center;
+}
+p 
+{
+	text-align:center;
+}
+.btn-block
+{
+	background-color:grey;
+	color:white;
+}
+hr.style3 
+{
+	border-top: 1px dashed #595959;
+}
+.container{
+	height:525px;
+	width:300px;
+	background-color:#333333;
+	border-radius:4px;
+	color:#b3b3b3;
+	margin-top:75px
+}

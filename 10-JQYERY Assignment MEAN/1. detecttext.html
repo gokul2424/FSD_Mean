@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>How to detect a textbox's content has changed using jQuery</title>
+</head>
+<body>
+<p>Check the console to detect the textbox chnages</p>
+<form action="demo_form.asp">
+First name: <input type="text" id="name1" name="fname"><br>
+Last name: <input type="text" id="name2" name="lname"><br>
+<input type="submit" value="Submit">
+</form>
+<script>
+$('#name1').on('input', function() {
+console.log('New First name added');
+});
+$('#name2').on('input', function() {
+console.log('New second name added');
+});
+</script>
+</body>
+</html>

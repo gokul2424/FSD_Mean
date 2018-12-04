@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change the text inside button</title>
+<p><strong>Click on the button to change the text</strong> </p>
+<style type="text/css">
+    button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(this).text($(this).text() == '1' ? '2' : '1');
+        });
+    });
+</script>
+</head>
+<body>
+    <button type="button">1</button>
+   
+</body>
+</html>                            
