@@ -10,8 +10,8 @@ import { Course } from './Course';
 export class AppComponent{
 
  
-  title = 'my-project sra';
-  now = new Date();
+  title = 'my-project';
+  
   courses : Array<Course>=[
     {title1: "Angular", summary:"angular 1"},
     {title1: "Angular 2", summary:"angular 2"}
