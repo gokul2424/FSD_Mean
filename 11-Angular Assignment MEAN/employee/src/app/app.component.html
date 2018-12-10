@@ -48,7 +48,8 @@
     </div>
     <button type="button" class="btn btn-primary"
      (click)="addEmployee(employeeid.value,employeefirst.value,employeelast.value,employeeemail.value,employeegender.value)">Add</button><hr/>
-    <div class="row">
+    
+     <div class="row">
         <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1">Search Employee</span>
@@ -72,7 +73,7 @@
             <th scope="col">Email</th>
             
           </tr>
-        </thead>
+        </thead>        
     </table>
 </div>
 
@@ -81,7 +82,7 @@
        | searchEmployee:search.value;let i = index" id={{employee.id}}
        first_name={{employee.first_name}} 
        last_name={{employee.last_name}} 
-       email={{employee.email}} key={{i}} ></my-employee>
+       email={{employee.email}} key={{i}} (employeeDeleted)="handleEmployeeDeletion($event)"></my-employee>
   </div>
 
     

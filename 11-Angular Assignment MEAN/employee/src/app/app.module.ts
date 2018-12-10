@@ -10,6 +10,7 @@ import { SearchCoursesPipe } from './searchcourses.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeComponent } from './employee.component';
 import { SearchEmployeePipe } from './searchemployee.pipe';
+import { EmployeeService } from './services/employee.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { SearchEmployeePipe } from './searchemployee.pipe';
     BrowserModule,
     AppRoutingModule , HttpClientModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
