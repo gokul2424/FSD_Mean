@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Employee } from './Employee';
+import { Employee } from '../models/Employee';
 
 @Pipe({
     name: 'searchEmployee'
@@ -13,7 +13,8 @@ export class SearchEmployeePipe implements PipeTransform {
         if(firstname)
         {
             let filteredEmployee: Array<Employee> = null;
-            filteredEmployee= employees.filter(employee => employee.first_name.startsWith(firstname) )
+            filteredEmployee= 
+            employees.filter(employee => employee.first_name.startsWith(firstname) )
             return filteredEmployee;
         }
         return employees;

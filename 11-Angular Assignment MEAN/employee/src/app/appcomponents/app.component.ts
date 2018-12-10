@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Course } from './Course';
-import { Employee } from './Employee';
+import { Course } from '../models/Course';
+import { Employee } from '../models/Employee';
 import { HttpClient } from '@angular/common/http';
-import { EmployeeService } from './services/employee.service';
+import { EmployeeService } from '../services/employee.service';
 
 @Component({
   selector: 'app-root',
