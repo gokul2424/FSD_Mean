@@ -35,6 +35,12 @@ app.delete('/employee/:index',(req,res)=>
     res.json(employeesjson);
 })
 
+app.put('/employee/:index',(req,res)=>
+          {
+    var index = req.params.index;
+    employeesjson.splice(index,1);
+    res.json(employeesjson);
+})
 
 
 

@@ -13,7 +13,10 @@ import { EmployeeService } from '../services/employee.service';
       <td>{{first_name}}</td>
       <td>{{last_name}}</td>
       <td>{{email}}</td>
+      <a routerLink="/Edit"><button type="button" class="btn btn-info" (click)="editEmployee(key)">Edit{{key}}</button></a>
       <button type="button" class="btn btn-danger" (click)="deleteEmployee(key)">Delete</button>
+      
+      
     </tr>
   </tbody>
 </table>
@@ -49,6 +52,13 @@ export class EmployeeComponent implements OnInit {
     
       this.employeeServive.deleteEmployee(key)
       .then(data=> this.employeeDeleted.emit(data as any));
+    
+    }
+
+    editEmployee(key:number)
+    {
+      console.log('updating',key);    
+    
     
     }
 

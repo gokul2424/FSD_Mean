@@ -38,9 +38,7 @@ export class EmployeeService {
         return  this.http.delete(this.baseUrl +key)
         .toPromise()
         .then(res => res)
-        
-        
-      
+
       
     }
 

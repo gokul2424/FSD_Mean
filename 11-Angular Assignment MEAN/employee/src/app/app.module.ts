@@ -11,11 +11,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeComponent } from './employeecomponent/employee.component';
 import { SearchEmployeePipe } from './pipes/searchemployee.pipe';
 import { EmployeeService } from './services/employee.service';
+import { EditComponent } from './employeecomponent/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent , BadgeComponent , CardComponent , EmployeeComponent ,
-    CapitalizePipe , SearchCoursesPipe , SearchEmployeePipe
+    CapitalizePipe , SearchCoursesPipe , SearchEmployeePipe , EditComponent
   ],
   imports: [
     BrowserModule,
