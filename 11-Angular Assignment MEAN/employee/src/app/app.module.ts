@@ -12,15 +12,20 @@ import { EmployeeComponent } from './employeecomponent/employee.component';
 import { SearchEmployeePipe } from './pipes/searchemployee.pipe';
 import { EmployeeService } from './services/employee.service';
 import { EditComponent } from './employeecomponent/edit.component';
+import { Child2Component } from './child/child2.component';
+import { Child1Component } from './child/child1.component';
+import { StorageServiceModule } from 'angular-webstorage-service';
+
 
 @NgModule({
   declarations: [
     AppComponent , BadgeComponent , CardComponent , EmployeeComponent ,
-    CapitalizePipe , SearchCoursesPipe , SearchEmployeePipe , EditComponent
+    CapitalizePipe , SearchCoursesPipe , SearchEmployeePipe , EditComponent ,
+    Child1Component , Child2Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule , HttpClientModule
+    AppRoutingModule , HttpClientModule, StorageServiceModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
