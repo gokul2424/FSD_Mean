@@ -19,7 +19,8 @@ export class AppComponent implements OnInit {
   courses: Array<Course> = [
    
   ];
-  constructor(public courseService: CourseService, public logService: LogService){
+  constructor(public courseService: CourseService, 
+    public logService: LogService){
 
   }
 

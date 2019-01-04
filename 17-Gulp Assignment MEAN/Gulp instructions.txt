@@ -20,3 +20,7 @@ npm install gulp-concat --save-dev
 npm install gulp-rimraf --save-dev
 
 npm install gulp-minify-css --save-dev
+
+gulp --to run
+
+gulp javascript  -- to run

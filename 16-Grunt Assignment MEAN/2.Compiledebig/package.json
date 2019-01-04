@@ -1,0 +1,17 @@
+{
+  "name": "2.compiledebig",
+  "version": "1.0.0",
+  "description": "Code for the [scotch.io tutorial](http://scotch.io/bar-talk/a-simple-guide-to-getting-started-with-grunt)",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-jshint": "^2.0.0",
+    "jshint-stylish": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,25 @@
+grunt instructions
+
+npm install -g grunt-cli
+
+npm install
+
+npm init
+
+npm install grunt --save-dev
+
+npm i grunt-contrib-copy
+
+npm i jshint-stylish
+
+npm i grunt-contrib-jshint
+
+npm i grunt-contrib-concat
+
+npm i grunt-header
+
+npm i grunt-footer
+
+npm i grunt-contrib-uglify
+
+npm i grunt-contrib-cssmin
