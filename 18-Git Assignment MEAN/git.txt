@@ -1,0 +1,27 @@
+
+https://github.com/gokul2424/Git-Mean-Repo/tree/middleware
+
+echo "# Git-Mean-Repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/gokul2424/Git-Mean-Repo.git
+git push -u origin master
+
+
+git remote add uiremote https://github.com/gokul2424/Git-Mean-Repo.git
+
+git remote add middlewareremote https://github.com/gokul2424/Git-Mean-Repo.git
+
+git checkout UI
+
+git checkout -b UI
+
+git push -u uiremote UI
+
+git branch
+
+git checkout -b middleware
+
+git push -u middlewareremote middleware
+

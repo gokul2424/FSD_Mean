@@ -1,0 +1,7 @@
+Jenkins
+
+http://localhost:8080/
+
+admin : admin
+
+Password : 5c99d6e70dbd4e65bd63a09938963ac4
