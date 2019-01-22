@@ -9,18 +9,23 @@ import { EditComponent } from './components/edit/edit.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UsersService } from './users.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FileuploadComponent } from './fileupload/fileupload.component';
+
+import {FileUploadModule} from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FileUploadModule,
     ReactiveFormsModule
   ],
   providers: [UsersService],

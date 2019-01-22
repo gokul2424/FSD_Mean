@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient , HttpHeaders} from '@angular/common/http';
 
 import { map } from 'rxjs/operators';
+
 
 
 @Injectable()
@@ -65,4 +66,16 @@ export class UsersService {
               return res;
             }));
   }
+
+
+  downloadFile(file:String){
+    console.log("file upload");
+    var body = {filename:file};
+
+    return this.http.post('http://localhost:4000/file/download',body,{
+        responseType : 'blob',
+        headers:new HttpHeaders().append('Content-Type','application/json')
+    });
+}
+
 }

@@ -23,7 +23,15 @@ DB - angularuser
 
 start node server.js
 
+Login and signup page reference
 
+http://jasonwatmore.com/post/2018/05/16/angular-6-user-registration-and-login-example-tutorial
 
+User create edit update reference
 
 https://appdividend.com/2018/01/21/angular-5-crud-tutorial-example-scratch/
+
+File upload reference
+
+https://www.youtube.com/watch?v=NsHgvKeAEDI
+
