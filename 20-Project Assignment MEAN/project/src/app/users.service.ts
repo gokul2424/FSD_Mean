@@ -59,8 +59,7 @@ export class UsersService {
     console.log("inside delete");
     const uri = 'http://localhost:4000/users/delete/' + id;
 
-    return this
-            .http
+    return this.http
             .get(uri)
             .pipe(map(res => {
               return res;
