@@ -2,7 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { FileSelectDirective } from 'ng2-file-upload';
+
 
 import { AppComponent }  from './app.component';
 import { routing }        from './app.routing';
@@ -29,8 +29,7 @@ import { UploadComponent } from './upload/index';
         HomeComponent,
         LoginComponent,
         RegisterComponent,
-		UploadComponent,
-		FileSelectDirective
+		UploadComponent
     ],
     providers: [
         AuthGuard,
