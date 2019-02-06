@@ -1,0 +1,52 @@
+create database emart;
+use emart;
+CREATE TABLE `customers` (
+ `id` int(11) NOT NULL UNIQUE AUTO_INCREMENT,
+ `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+ `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ PRIMARY KEY (`id`) )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ALTER TABLE customers AUTO_INCREMENT=1;
+
+insert into customers (name,password) values ('admin','admin')
+
+CREATE TABLE `items` (
+ `item_id` int(11) NOT NULL UNIQUE AUTO_INCREMENT,
+ `item_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+ `price` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ PRIMARY KEY (`item_id`) )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO items (item_name,price) VALUES ('Pen', 3)
+
+ALTER TABLE items AUTO_INCREMENT=1;
+
+CREATE TABLE `cart` (
+`cart_id` int(100) NOT NULL UNIQUE AUTO_INCREMENT,
+`name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+`date` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+ `item_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `price` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `Quantity` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ PRIMARY KEY (`cart_id`) )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+ALTER TABLE cart AUTO_INCREMENT=100;
+
+CREATE TABLE `order_items` (
+`order_id` int(100) NOT NULL UNIQUE ,
+ `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `date` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+ `number_of_items` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `Total_price` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `request` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ PRIMARY KEY (`order_id`) )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE `neworders` (
+`id` int(100) NOT NULL UNIQUE AUTO_INCREMENT,
+`order_id` int(100) COLLATE utf8_unicode_ci NOT NULL,
+ `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+ `item_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `price` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `Quantity` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ PRIMARY KEY (`id`) )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+ALTER TABLE neworders AUTO_INCREMENT=1;
+
+
