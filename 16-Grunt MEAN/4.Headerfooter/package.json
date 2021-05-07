@@ -9,7 +9,7 @@
   "author": "gokul",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.0.3"
+    "grunt": "^1.3.0"
   },
   "dependencies": {
     "grunt-footer": "^1.1.0",
